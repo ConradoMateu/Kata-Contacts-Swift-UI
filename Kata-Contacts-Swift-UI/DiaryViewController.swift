@@ -22,12 +22,10 @@ class DiaryViewController: UIViewController, DiaryView {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        let injector = Injector();
         
-        let repository =  MockDiaryRepository()
-        let createUseCase =  CreateContact(repository)
-        let getAllUseCase = GetAllContacts(repository)
-        let useCase = UseCase(createContact: createUseCase, getAllContacts: getAllUseCase)
-        presenter = ContactPresenterImp(view: self, model: useCase)
+        presenter = injector.contactPresenter(self)
         presenter?.initialize()
     }
  
