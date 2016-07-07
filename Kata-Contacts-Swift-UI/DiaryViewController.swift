@@ -18,13 +18,14 @@ class DiaryViewController: UIViewController, DiaryView {
     @IBOutlet weak var nameField: UITextField!
 
     var presenter: ContactPresenter?
-    var contactList: [Contact] = []
+    var tableViewController: ContactTableViewController?
         
     override func viewDidLoad() {
         super.viewDidLoad()
        
         let injector = Injector();
         
+        tableViewController = ContactTableViewController(tableView: tableView)
         presenter = injector.contactPresenter(self)
         presenter?.initialize()
     }
@@ -42,21 +43,9 @@ class DiaryViewController: UIViewController, DiaryView {
     }
 
     func showContacts(contacts: [Contact]){
-        self.contactList = contacts
-        tableView.reloadData()
-    } //tableView (en este caso)
     
+    tableViewController?.showContacts(contacts)
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contactList.count
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
-        
-        
-        cell.textLabel?.text = contactList[indexPath.row].name
-        return cell
     }
 
 }

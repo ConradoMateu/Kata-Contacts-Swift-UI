@@ -10,8 +10,8 @@ import Foundation
 
 protocol DiaryView {
     
-    func showContacts(contacts: [Contact]) //tableView (en este caso) 
-    func addContact(sender: AnyObject) //tableView (en este caso)
+    func showContacts(contacts: [Contact])
+    func addContact(sender: AnyObject)
     func getName() -> String
     func getNumber() -> String
 }

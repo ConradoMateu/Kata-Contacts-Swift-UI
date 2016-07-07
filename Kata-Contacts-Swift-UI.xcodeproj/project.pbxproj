@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E22A93EF1D2BD499001C027C /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A93EE1D2BD499001C027C /* DiaryView.swift */; };
 		E22A93F11D2BDBED001C027C /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A93F01D2BDBED001C027C /* ContactPresenter.swift */; };
+		E25453DB1D2EFD3600D8F133 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25453DA1D2EFD3600D8F133 /* TableViewController.swift */; };
 		E2D7765C1D2E9DCD00C5C157 /* MockDiaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7765B1D2E9DCD00C5C157 /* MockDiaryRepository.swift */; };
 		E2D776601D2EA23400C5C157 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7765F1D2EA23400C5C157 /* Injector.swift */; };
 		E2DD7BDC1D2E940A00414779 /* GetAllContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7BDB1D2E940A00414779 /* GetAllContacts.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		E22A93EE1D2BD499001C027C /* DiaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
 		E22A93F01D2BDBED001C027C /* ContactPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
+		E25453DA1D2EFD3600D8F133 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E2D7765B1D2E9DCD00C5C157 /* MockDiaryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDiaryRepository.swift; sourceTree = "<group>"; };
 		E2D7765F1D2EA23400C5C157 /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		E2DD7BDB1D2E940A00414779 /* GetAllContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllContacts.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			children = (
 				E22A93EE1D2BD499001C027C /* DiaryView.swift */,
 				E2EF82CD1D2C5BAA00625361 /* DiaryViewController.swift */,
+				E25453DA1D2EFD3600D8F133 /* TableViewController.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				E2D776601D2EA23400C5C157 /* Injector.swift in Sources */,
 				E2DD7BE31D2E964900414779 /* DiaryRepository.swift in Sources */,
 				E2FEFEA01D2AF0630071C358 /* Contact.swift in Sources */,
+				E25453DB1D2EFD3600D8F133 /* TableViewController.swift in Sources */,
 				E2FEFE6A1D2AEEA50071C358 /* AppDelegate.swift in Sources */,
 				E2D7765C1D2E9DCD00C5C157 /* MockDiaryRepository.swift in Sources */,
 				E22A93F11D2BDBED001C027C /* ContactPresenter.swift in Sources */,
