@@ -9,5 +9,6 @@
 import Foundation
 
 protocol ContactPresenter {
+    func initialize()
     func addContact(contact: Contact)
 }

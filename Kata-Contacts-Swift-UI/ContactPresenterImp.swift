@@ -11,19 +11,24 @@ import Foundation
 class ContactPresenterImp: ContactPresenter{
     
     var view: DiaryView
-    var model: Diary
+    var model: UseCase
     
-    required init(view: DiaryView, model: Diary) {
+    required init(view: DiaryView, model: UseCase) {
         self.view = view
         self.model = model
-        
     }
     
     func addContact(contact: Contact) {
-        model.contacts.append(contact)
-        view.showContacts(model.contacts)
-        
+        model.createContact.create(contact);
+        getContacts()
     }
     
+    private func getContacts(){
+        view.showContacts(model.getAllContacts.getAll())
+    }
+    
+    func initialize() {
+        getContacts()
+    }
     
 }

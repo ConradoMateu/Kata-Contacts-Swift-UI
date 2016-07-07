@@ -8,12 +8,20 @@
 
 import Foundation
 
-struct Diary {
+class InMemoryDiaryRepository : DiaryRepository {
     
-    var contacts: [Contact]
+    private var contacts: [Contact]
     
     init(){
         self.contacts = [Contact]()
+    }
+    
+    func getAll() -> [Contact] {
+        return contacts;
+    }
+    
+    func create(contact: Contact) {
+        contacts.append(contact)
     }
     
 }

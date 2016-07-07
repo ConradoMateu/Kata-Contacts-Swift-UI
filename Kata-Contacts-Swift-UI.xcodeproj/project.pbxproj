@@ -10,6 +10,11 @@
 		E22A93ED1D2BD3A3001C027C /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A93EC1D2BD3A3001C027C /* ContactPresenter.swift */; };
 		E22A93EF1D2BD499001C027C /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A93EE1D2BD499001C027C /* DiaryView.swift */; };
 		E22A93F11D2BDBED001C027C /* ContactPresenterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A93F01D2BDBED001C027C /* ContactPresenterImp.swift */; };
+		E2D7765C1D2E9DCD00C5C157 /* MockDiaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7765B1D2E9DCD00C5C157 /* MockDiaryRepository.swift */; };
+		E2DD7BDC1D2E940A00414779 /* GetAllContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7BDB1D2E940A00414779 /* GetAllContacts.swift */; };
+		E2DD7BDE1D2E942C00414779 /* CreateContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7BDD1D2E942C00414779 /* CreateContact.swift */; };
+		E2DD7BE01D2E947200414779 /* UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7BDF1D2E947200414779 /* UseCases.swift */; };
+		E2DD7BE31D2E964900414779 /* DiaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7BE21D2E964900414779 /* DiaryRepository.swift */; };
 		E2EF82CE1D2C5BAA00625361 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EF82CD1D2C5BAA00625361 /* DiaryViewController.swift */; };
 		E2FEFE6A1D2AEEA50071C358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FEFE691D2AEEA50071C358 /* AppDelegate.swift */; };
 		E2FEFE711D2AEEA50071C358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FEFE6F1D2AEEA50071C358 /* Main.storyboard */; };
@@ -18,7 +23,7 @@
 		E2FEFE811D2AEEA50071C358 /* Kata_Contacts_Swift_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FEFE801D2AEEA50071C358 /* Kata_Contacts_Swift_UITests.swift */; };
 		E2FEFE8C1D2AEEA50071C358 /* Kata_Contacts_Swift_UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FEFE8B1D2AEEA50071C358 /* Kata_Contacts_Swift_UIUITests.swift */; };
 		E2FEFEA01D2AF0630071C358 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FEFE9F1D2AF0630071C358 /* Contact.swift */; };
-		E2FEFEA41D2AF41C0071C358 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FEFEA31D2AF41C0071C358 /* Diary.swift */; };
+		E2FEFEA41D2AF41C0071C358 /* InMemoryDiaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FEFEA31D2AF41C0071C358 /* InMemoryDiaryRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,11 @@
 		E22A93EC1D2BD3A3001C027C /* ContactPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
 		E22A93EE1D2BD499001C027C /* DiaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
 		E22A93F01D2BDBED001C027C /* ContactPresenterImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPresenterImp.swift; sourceTree = "<group>"; };
+		E2D7765B1D2E9DCD00C5C157 /* MockDiaryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDiaryRepository.swift; sourceTree = "<group>"; };
+		E2DD7BDB1D2E940A00414779 /* GetAllContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllContacts.swift; sourceTree = "<group>"; };
+		E2DD7BDD1D2E942C00414779 /* CreateContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateContact.swift; sourceTree = "<group>"; };
+		E2DD7BDF1D2E947200414779 /* UseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
+		E2DD7BE21D2E964900414779 /* DiaryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryRepository.swift; sourceTree = "<group>"; };
 		E2EF82CD1D2C5BAA00625361 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		E2FEFE661D2AEEA50071C358 /* Kata-Contacts-Swift-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kata-Contacts-Swift-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FEFE691D2AEEA50071C358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +66,7 @@
 		E2FEFE8B1D2AEEA50071C358 /* Kata_Contacts_Swift_UIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kata_Contacts_Swift_UIUITests.swift; sourceTree = "<group>"; };
 		E2FEFE8D1D2AEEA50071C358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2FEFE9F1D2AF0630071C358 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		E2FEFEA31D2AF41C0071C358 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
+		E2FEFEA31D2AF41C0071C358 /* InMemoryDiaryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryDiaryRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2D776591D2E9D6700C5C157 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				E2D7765B1D2E9DCD00C5C157 /* MockDiaryRepository.swift */,
+			);
+			name = Mock;
+			sourceTree = "<group>";
+		};
+		E2D7765A1D2E9D7700C5C157 /* InMemory */ = {
+			isa = PBXGroup;
+			children = (
+				E2FEFEA31D2AF41C0071C358 /* InMemoryDiaryRepository.swift */,
+			);
+			name = InMemory;
+			sourceTree = "<group>";
+		};
+		E2DD7BD91D2E917500414779 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E2DD7BDA1D2E918300414779 /* Use Cases */,
+				E2FEFE991D2AEFE40071C358 /* model */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		E2DD7BDA1D2E918300414779 /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				E2DD7BDB1D2E940A00414779 /* GetAllContacts.swift */,
+				E2DD7BDD1D2E942C00414779 /* CreateContact.swift */,
+				E2DD7BDF1D2E947200414779 /* UseCases.swift */,
+			);
+			name = "Use Cases";
+			sourceTree = "<group>";
+		};
+		E2DD7BE11D2E963600414779 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E2D7765A1D2E9D7700C5C157 /* InMemory */,
+				E2D776591D2E9D6700C5C157 /* Mock */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		E2FEFE5D1D2AEEA50071C358 = {
 			isa = PBXGroup;
 			children = (
@@ -107,15 +161,15 @@
 		E2FEFE681D2AEEA50071C358 /* Kata-Contacts-Swift-UI */ = {
 			isa = PBXGroup;
 			children = (
+				E2DD7BE11D2E963600414779 /* Data */,
+				E2DD7BD91D2E917500414779 /* Domain */,
 				E2FEFE9E1D2AF0370071C358 /* presenter */,
 				E2FEFE9D1D2AF02C0071C358 /* view */,
-				E2FEFE991D2AEFE40071C358 /* model */,
 				E2FEFE691D2AEEA50071C358 /* AppDelegate.swift */,
 				E2FEFE6F1D2AEEA50071C358 /* Main.storyboard */,
 				E2FEFE721D2AEEA50071C358 /* Assets.xcassets */,
 				E2FEFE741D2AEEA50071C358 /* LaunchScreen.storyboard */,
 				E2FEFE771D2AEEA50071C358 /* Info.plist */,
-				E2EF82CD1D2C5BAA00625361 /* DiaryViewController.swift */,
 			);
 			path = "Kata-Contacts-Swift-UI";
 			sourceTree = "<group>";
@@ -142,7 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				E2FEFE9F1D2AF0630071C358 /* Contact.swift */,
-				E2FEFEA31D2AF41C0071C358 /* Diary.swift */,
+				E2DD7BE21D2E964900414779 /* DiaryRepository.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -151,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				E22A93EE1D2BD499001C027C /* DiaryView.swift */,
+				E2EF82CD1D2C5BAA00625361 /* DiaryViewController.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -299,12 +354,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E22A93ED1D2BD3A3001C027C /* ContactPresenter.swift in Sources */,
-				E2FEFEA41D2AF41C0071C358 /* Diary.swift in Sources */,
+				E2FEFEA41D2AF41C0071C358 /* InMemoryDiaryRepository.swift in Sources */,
 				E22A93EF1D2BD499001C027C /* DiaryView.swift in Sources */,
 				E2EF82CE1D2C5BAA00625361 /* DiaryViewController.swift in Sources */,
+				E2DD7BE31D2E964900414779 /* DiaryRepository.swift in Sources */,
 				E2FEFEA01D2AF0630071C358 /* Contact.swift in Sources */,
 				E2FEFE6A1D2AEEA50071C358 /* AppDelegate.swift in Sources */,
+				E2D7765C1D2E9DCD00C5C157 /* MockDiaryRepository.swift in Sources */,
 				E22A93F11D2BDBED001C027C /* ContactPresenterImp.swift in Sources */,
+				E2DD7BE01D2E947200414779 /* UseCases.swift in Sources */,
+				E2DD7BDE1D2E942C00414779 /* CreateContact.swift in Sources */,
+				E2DD7BDC1D2E940A00414779 /* GetAllContacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
