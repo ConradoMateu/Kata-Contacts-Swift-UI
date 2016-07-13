@@ -1,51 +1,41 @@
 //
-//  DiaryViewController.swift
+//  ContactTableViewController.swift
 //  Kata-Contacts-Swift-UI
 //
-//  Created by Conrado Mateu Gisbert on 05/07/16.
+//  Created by Conrado Mateu Gisbert on 07/07/16.
 //  Copyright © 2016 conradomateu. All rights reserved.
 //
 
 import UIKit
 
-class DiaryViewController: UIViewController, DiaryView {
-
-
-
+class DiaryViewController: NSObject, DiaryView  {
+    
+    private var tableView: UITableView?
+    private var presenter: DiaryPresenter?
+    private var delegate: TBDelegate?
+    private var dataSource: TBDataSource?
+    private var injector =  Injector()
+    
+    init(tableView: UITableView){
+        super.init()
+        self.tableView = tableView
+        self.presenter = injector.diaryPresenter(self)
+        self.dataSource = TBDataSource()
+        self.delegate = TBDelegate(dataSource: dataSource!, presenter: presenter!)
+        self.tableView?.delegate = delegate
+        self.tableView?.dataSource = dataSource
         
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var numberField: UITextField!
-    @IBOutlet weak var nameField: UITextField!
-
-    var presenter: ContactPresenter?
-    var tableViewController: ContactTableViewController?
-        
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       
-        let injector = Injector();
-        
-        tableViewController = ContactTableViewController(tableView: tableView)
-        presenter = injector.contactPresenter(self)
         presenter?.initialize()
     }
- 
-    func getName() -> String {
-        return nameField.text!
-    }
-    func getNumber() -> String {
-        return numberField.text!
-    }
-        
-    @IBAction func addContact(sender: AnyObject) {
-        let newContact: Contact = Contact(name: getName(), phone: getNumber())
-        presenter?.addContact(newContact)
+    
+    func addContact(contact: Contact)  {
+        dataSource?.contactList.append(contact)
+        tableView?.reloadData()
     }
 
+    
     func showContacts(contacts: [Contact]){
-    
-    tableViewController?.showContacts(contacts)
-    
+        dataSource?.contactList += contacts
+        tableView?.reloadData()
     }
-
 }

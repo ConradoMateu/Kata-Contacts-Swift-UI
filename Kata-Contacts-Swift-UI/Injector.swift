@@ -31,7 +31,11 @@ class Injector {
         return UseCase(createContact: createContact(), getAllContacts: getAllContacts())
     }
     
-    func contactPresenter(view: DiaryView) -> ContactPresenter {
+    func contactPresenter(view: ContactView) -> ContactPresenter {
         return ContactPresenter(view: view, model: contactUseCases())
+    }
+    
+    func diaryPresenter(view: DiaryView) -> DiaryPresenter{
+        return DiaryPresenter(view: view, model: contactUseCases())
     }
 }

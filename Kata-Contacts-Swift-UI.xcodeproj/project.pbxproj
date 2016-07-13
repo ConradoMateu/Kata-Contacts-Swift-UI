@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		E22A93EF1D2BD499001C027C /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A93EE1D2BD499001C027C /* DiaryView.swift */; };
 		E22A93F11D2BDBED001C027C /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A93F01D2BDBED001C027C /* ContactPresenter.swift */; };
-		E25453DB1D2EFD3600D8F133 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25453DA1D2EFD3600D8F133 /* TableViewController.swift */; };
+		E25453DB1D2EFD3600D8F133 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25453DA1D2EFD3600D8F133 /* DiaryViewController.swift */; };
+		E2CE08881D2FB89100DF0FAB /* TBDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CE08871D2FB89100DF0FAB /* TBDelegate.swift */; };
+		E2CE088A1D2FB98A00DF0FAB /* TBDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CE08891D2FB98A00DF0FAB /* TBDataSource.swift */; };
 		E2D7765C1D2E9DCD00C5C157 /* MockDiaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7765B1D2E9DCD00C5C157 /* MockDiaryRepository.swift */; };
 		E2D776601D2EA23400C5C157 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7765F1D2EA23400C5C157 /* Injector.swift */; };
+		E2D7CF821D2FD68B00E010D0 /* DiaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7CF811D2FD68B00E010D0 /* DiaryPresenter.swift */; };
 		E2DD7BDC1D2E940A00414779 /* GetAllContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7BDB1D2E940A00414779 /* GetAllContacts.swift */; };
 		E2DD7BDE1D2E942C00414779 /* CreateContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7BDD1D2E942C00414779 /* CreateContact.swift */; };
 		E2DD7BE01D2E947200414779 /* UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7BDF1D2E947200414779 /* UseCases.swift */; };
 		E2DD7BE31D2E964900414779 /* DiaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD7BE21D2E964900414779 /* DiaryRepository.swift */; };
-		E2EF82CE1D2C5BAA00625361 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EF82CD1D2C5BAA00625361 /* DiaryViewController.swift */; };
+		E2EF82CE1D2C5BAA00625361 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EF82CD1D2C5BAA00625361 /* ContactViewController.swift */; };
 		E2FEFE6A1D2AEEA50071C358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FEFE691D2AEEA50071C358 /* AppDelegate.swift */; };
 		E2FEFE711D2AEEA50071C358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FEFE6F1D2AEEA50071C358 /* Main.storyboard */; };
 		E2FEFE731D2AEEA50071C358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FEFE721D2AEEA50071C358 /* Assets.xcassets */; };
@@ -47,14 +50,17 @@
 /* Begin PBXFileReference section */
 		E22A93EE1D2BD499001C027C /* DiaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
 		E22A93F01D2BDBED001C027C /* ContactPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
-		E25453DA1D2EFD3600D8F133 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E25453DA1D2EFD3600D8F133 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		E2CE08871D2FB89100DF0FAB /* TBDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBDelegate.swift; sourceTree = "<group>"; };
+		E2CE08891D2FB98A00DF0FAB /* TBDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBDataSource.swift; sourceTree = "<group>"; };
 		E2D7765B1D2E9DCD00C5C157 /* MockDiaryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDiaryRepository.swift; sourceTree = "<group>"; };
 		E2D7765F1D2EA23400C5C157 /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		E2D7CF811D2FD68B00E010D0 /* DiaryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryPresenter.swift; sourceTree = "<group>"; };
 		E2DD7BDB1D2E940A00414779 /* GetAllContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllContacts.swift; sourceTree = "<group>"; };
 		E2DD7BDD1D2E942C00414779 /* CreateContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateContact.swift; sourceTree = "<group>"; };
 		E2DD7BDF1D2E947200414779 /* UseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
 		E2DD7BE21D2E964900414779 /* DiaryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryRepository.swift; sourceTree = "<group>"; };
-		E2EF82CD1D2C5BAA00625361 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		E2EF82CD1D2C5BAA00625361 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		E2FEFE661D2AEEA50071C358 /* Kata-Contacts-Swift-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kata-Contacts-Swift-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FEFE691D2AEEA50071C358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2FEFE701D2AEEA50071C358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -208,8 +214,10 @@
 			isa = PBXGroup;
 			children = (
 				E22A93EE1D2BD499001C027C /* DiaryView.swift */,
-				E2EF82CD1D2C5BAA00625361 /* DiaryViewController.swift */,
-				E25453DA1D2EFD3600D8F133 /* TableViewController.swift */,
+				E2EF82CD1D2C5BAA00625361 /* ContactViewController.swift */,
+				E25453DA1D2EFD3600D8F133 /* DiaryViewController.swift */,
+				E2CE08871D2FB89100DF0FAB /* TBDelegate.swift */,
+				E2CE08891D2FB98A00DF0FAB /* TBDataSource.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				E22A93F01D2BDBED001C027C /* ContactPresenter.swift */,
+				E2D7CF811D2FD68B00E010D0 /* DiaryPresenter.swift */,
 			);
 			name = presenter;
 			sourceTree = "<group>";
@@ -356,15 +365,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D7CF821D2FD68B00E010D0 /* DiaryPresenter.swift in Sources */,
 				E2FEFEA41D2AF41C0071C358 /* InMemoryDiaryRepository.swift in Sources */,
 				E22A93EF1D2BD499001C027C /* DiaryView.swift in Sources */,
-				E2EF82CE1D2C5BAA00625361 /* DiaryViewController.swift in Sources */,
+				E2EF82CE1D2C5BAA00625361 /* ContactViewController.swift in Sources */,
+				E2CE088A1D2FB98A00DF0FAB /* TBDataSource.swift in Sources */,
 				E2D776601D2EA23400C5C157 /* Injector.swift in Sources */,
 				E2DD7BE31D2E964900414779 /* DiaryRepository.swift in Sources */,
 				E2FEFEA01D2AF0630071C358 /* Contact.swift in Sources */,
-				E25453DB1D2EFD3600D8F133 /* TableViewController.swift in Sources */,
+				E25453DB1D2EFD3600D8F133 /* DiaryViewController.swift in Sources */,
 				E2FEFE6A1D2AEEA50071C358 /* AppDelegate.swift in Sources */,
 				E2D7765C1D2E9DCD00C5C157 /* MockDiaryRepository.swift in Sources */,
+				E2CE08881D2FB89100DF0FAB /* TBDelegate.swift in Sources */,
 				E22A93F11D2BDBED001C027C /* ContactPresenter.swift in Sources */,
 				E2DD7BE01D2E947200414779 /* UseCases.swift in Sources */,
 				E2DD7BDE1D2E942C00414779 /* CreateContact.swift in Sources */,

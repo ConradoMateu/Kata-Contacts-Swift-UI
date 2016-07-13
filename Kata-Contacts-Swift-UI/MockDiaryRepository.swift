@@ -12,10 +12,10 @@ class MockDiaryRepository : InMemoryDiaryRepository {
    
     override init() {
         super.init()
-        create(Contact(name: "Nombre", phone: "2342342"))
-        create(Contact(name: "Nombre1", phone: "2342342"))
-        create(Contact(name: "Nombre2", phone: "2342342"))
-        create(Contact(name: "Nombre3", phone: "2342342"))
+        create(Contact(name: "Conradomateu", phone: "65256462"))
+        create(Contact(name: "Tonilopezmr", phone: "642848444"))
+        create(Contact(name: "Grades Calculator", phone: "684949494"))
+        
     }
 
 }

@@ -10,25 +10,18 @@ import Foundation
 
 class ContactPresenter {
     
-    private let view: DiaryView
+    private let view: ContactView
     private let model: UseCase
     
-    required init(view: DiaryView, model: UseCase) {
+    required init(view: ContactView, model: UseCase) {
         self.view = view
         self.model = model
     }
     
     func addContact(contact: Contact) {
         model.createContact.create(contact);
-        getContacts()
-    }
-    
-    private func getContacts(){
-        view.showContacts(model.getAllContacts.getAll())
-    }
-    
-    func initialize() {
-        getContacts()
     }
     
 }
+
+

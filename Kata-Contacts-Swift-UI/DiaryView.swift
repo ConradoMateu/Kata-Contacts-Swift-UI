@@ -8,10 +8,14 @@
 
 import Foundation
 
-protocol DiaryView {
+protocol ContactView {
     
-    func showContacts(contacts: [Contact])
+    
     func addContact(sender: AnyObject)
     func getName() -> String
     func getNumber() -> String
+}
+
+protocol DiaryView {
+    func showContacts(contacts: [Contact])
 }
